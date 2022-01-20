@@ -1,0 +1,247 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@font-face {
+  font-family: 'Pretendard-Light';
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'twaysky';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EliceDigitalBaeum_Bold';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap div {
+  cursor: default;
+}
+
+.cutton {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+header .open-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+  padding-left: 3%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+header .open-menu img {
+  width: 2vw;
+}
+
+header .show {
+  padding-right: 3%;
+  text-transform: uppercase;
+  font-family: 'Pretendard-Light';
+  font-size: 1vw;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10%;
+  line-height: 10vh;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  margin: 0;
+}
+
+.menu li a {
+  text-transform: uppercase;
+  font-size: 6em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+}
+
+#nav_big_text {
+  position: fixed;
+  right: 0.5em;
+  bottom: 0.1em;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+  font-size: 15em;
+  font-family: 'EliceDigitalBaeum_Bold';
+  color: #f56b6b;
+  text-transform: uppercase;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: .35s;
+  transition: .35s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+#nav_big_text.big_text_active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+  z-index: 99999;
+}
+
+#nav_big_text.big_text_active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.slider {
+  width: 150%;
+  height: 100vh;
+  position: relative;
+  background-image: url(../img/design-bg3.png);
+}
+
+.slider-main-text {
+  width: 200%;
+  height: 100%;
+  animation: marquee 30s linear infinite;
+  -webkit-animation: marquee 30s linear infinite;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-main-text span {
+  width: 45%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 25em;
+  -webkit-text-stroke: 1px white;
+  color: rgba(0, 0, 0, 0);
+  white-space: nowrap;
+  float: left;
+  cursor: default;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+
+footer div:nth-of-type(1) {
+  padding-left: 3%;
+  text-transform: uppercase;
+  font-family: 'Pretendard-Light';
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+footer div:nth-of-type(2) {
+  padding-right: 3%;
+  text-transform: uppercase;
+  font-family: 'Pretendard-Light';
+  font-size: 1vw;
+  font-weight: bold;
+}
