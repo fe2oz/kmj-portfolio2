@@ -24,114 +24,6 @@ body {
   z-index: 99;
 }
 
-header {
-  width: 100%;
-  height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  top: 0;
-  z-index: 10;
-}
-
-header .open-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  cursor: pointer;
-  padding-left: 3%;
-  -webkit-filter: invert(1);
-          filter: invert(1);
-}
-
-header .open-menu img {
-  width: 2vw;
-}
-
-header .show {
-  padding-right: 3%;
-  text-transform: uppercase;
-  font-family: 'Pretendard-Light';
-  font-size: 1vw;
-  font-weight: bold;
-  color: white;
-}
-
-.menu {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  z-index: 999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 10%;
-  line-height: 10vh;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  margin: 0;
-}
-
-.menu li a {
-  text-transform: uppercase;
-  font-size: 6em;
-  font-family: 'yg-jalnan';
-  color: white;
-}
-
-#nav_big_text {
-  position: fixed;
-  right: 0.5em;
-  bottom: 0.1em;
-  -webkit-transform: translateX(10%);
-          transform: translateX(10%);
-  font-size: 15em;
-  font-family: 'EliceDigitalBaeum_Bold';
-  color: #f56b6b;
-  text-transform: uppercase;
-  opacity: 0;
-  z-index: -1;
-  -webkit-transition: .35s;
-  transition: .35s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-}
-
-#nav_big_text.big_text_active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  opacity: 1;
-  z-index: 99999;
-}
-
-#nav_big_text.big_text_active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  opacity: 1;
-}
-
 .slider {
   width: 100%;
   height: 100vh;
@@ -167,6 +59,155 @@ header .show {
   cursor: default;
 }
 
+.slider-about {
+  width: 25vw;
+  position: relative;
+  left: 43.5%;
+  top: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-about p {
+  width: 7vw;
+  height: 3vh;
+  background-color: #fff;
+  text-align: center;
+  line-height: 3vh;
+  border-radius: .4em;
+  font-family: 'Pretendard-Light';
+  font-size: 0.9vw;
+  margin-left: 8%;
+  opacity: 0;
+  -webkit-transition: .35s;
+  transition: .35s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.slider-about p:after {
+  content: '';
+  position: absolute;
+  left: 12.8%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-right-color: #fff;
+  border-left: 0;
+  margin-top: -6px;
+  margin-left: -6px;
+}
+
+.slider-about img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  width: 1.2vw;
+  height: 1.2vw;
+  -webkit-animation: ani 1s infinite alternate;
+          animation: ani 1s infinite alternate;
+  cursor: pointer;
+}
+
+@-webkit-keyframes ani {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+  }
+}
+
+@keyframes ani {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+  }
+}
+
+.slider-works {
+  width: 25vw;
+  position: relative;
+  left: 48.8%;
+  top: 42.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-works p {
+  width: 7vw;
+  height: 3vh;
+  background-color: #fff;
+  text-align: center;
+  line-height: 3vh;
+  border-radius: .4em;
+  font-family: 'Pretendard-Light';
+  font-size: 0.9vw;
+  opacity: 0;
+  -webkit-transition: .35s;
+  transition: .35s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  margin-right: 8%;
+}
+
+.slider-works p:after {
+  content: '';
+  position: absolute;
+  left: 28%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left-color: #fff;
+  border-right: 0;
+  margin-top: -6px;
+  margin-right: -6px;
+}
+
+.slider-works img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  width: 1.2vw;
+  height: 1.2vw;
+  -webkit-animation: ani 1s infinite alternate;
+          animation: ani 1s infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes ani {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+  }
+}
+
 @keyframes marquee {
   0% {
     left: 0;
@@ -187,37 +228,4 @@ header .show {
     left: -100%;
     opacity: 0;
   }
-}
-
-footer {
-  width: 100%;
-  height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: absolute;
-  bottom: 0;
-  color: white;
-}
-
-footer div:nth-of-type(1) {
-  padding-left: 3%;
-  text-transform: uppercase;
-  font-family: 'Pretendard-Light';
-  font-size: 1vw;
-  font-weight: bold;
-}
-
-footer div:nth-of-type(2) {
-  padding-right: 3%;
-  text-transform: uppercase;
-  font-family: 'Pretendard-Light';
-  font-size: 1vw;
-  font-weight: bold;
 }

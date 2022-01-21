@@ -15,4 +15,22 @@ $(document).ready(function(){
                     navTextCopy.classList.remove("big_text_active");
                 })
             }
+    
+    const aboutCircle = document.getElementById("about-circle");
+    const aboutShow = document.getElementById("about-show");
+    const worksCircle = document.getElementById("works-circle");
+    const worksShow = document.getElementById("works-show");
+
+    aboutCircle.addEventListener("mouseover", function(){
+        aboutShow.style.opacity = "1"
+    });
+    aboutCircle.addEventListener("mouseout", function(){
+        aboutShow.style.opacity = "0"
+    });
+    worksCircle.addEventListener("mouseover", function(){
+        worksShow.style.opacity = "1"
+    });
+    worksCircle.addEventListener("mouseout", function(){
+        worksShow.style.opacity = "0"
+    });
 })
