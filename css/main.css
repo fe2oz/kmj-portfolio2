@@ -5,36 +5,6 @@ body {
   overflow: hidden;
 }
 
-ul, li, ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-@font-face {
-  font-family: 'Pretendard-Light';
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'twaysky';
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'EliceDigitalBaeum_Bold';
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .wrap {
   width: 100%;
   height: 100%;
@@ -127,7 +97,7 @@ header .show {
 .menu li a {
   text-transform: uppercase;
   font-size: 6em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'yg-jalnan';
   color: white;
 }
 
@@ -163,17 +133,18 @@ header .show {
 }
 
 .slider {
-  width: 150%;
+  width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url(../img/design-bg3.png);
+  background-image: url(../img/design-bg4.png);
+  background-size: 100% 100%;
 }
 
 .slider-main-text {
   width: 200%;
   height: 100%;
   animation: marquee 30s linear infinite;
-  -webkit-animation: marquee 30s linear infinite;
+  -webkit-animation: marquee 30s linear 1;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,10 +152,11 @@ header .show {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
 }
 
 .slider-main-text span {
-  width: 45%;
+  width: 80%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-transform: uppercase;
   font-size: 25em;
@@ -198,18 +170,22 @@ header .show {
 @keyframes marquee {
   0% {
     left: 0;
+    opacity: 1;
   }
   100% {
     left: -100%;
+    opacity: 0;
   }
 }
 
 @-webkit-keyframes marquee {
   0% {
     left: 0;
+    opacity: 1;
   }
   100% {
     left: -100%;
+    opacity: 0;
   }
 }
 
