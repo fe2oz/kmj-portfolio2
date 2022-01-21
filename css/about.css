@@ -1,0 +1,139 @@
+body {
+  height: 100vh;
+  background-image: url(../img/works-bg.png);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body div {
+  cursor: default;
+}
+
+#slider {
+  width: 80%;
+  height: 80vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+#slider-list {
+  width: 25%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+#slider-list-overlay {
+  width: 25%;
+  height: 0.1vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  top: 6%;
+}
+
+#slider-list h1 {
+  font-family: 'Pretendard-Light';
+  font-size: 1vw;
+  font-weight: normal;
+  text-align: center;
+}
+
+#slider-list ul {
+  width: 80%;
+}
+
+#slider-list ul li {
+  font-family: 'Pretendard-Light';
+  font-size: 1vw;
+  font-weight: normal;
+  height: 4.5vh;
+  line-height: 4.5vh;
+  text-align: center;
+  cursor: pointer;
+}
+
+#slider-list img {
+  display: inherit;
+  margin: 0 auto;
+  padding-top: 40%;
+}
+
+#slider-change-section {
+  width: 75%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+
+#slider-change-section-1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+
+#slider-change-section-1 #scs1-1,
+#slider-change-section-1 #scs1-2 {
+  width: 20vw;
+  height: 8vh;
+  position: relative;
+  background: #fff;
+  border-radius: .4em;
+  font-family: 'EliceDigitalBaeum_Regular';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+#slider-change-section-1 #scs1-1:after,
+#slider-change-section-1 #scs1-2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-right-color: #fff;
+  border-left: 0;
+  margin-top: -6px;
+  margin-left: -6px;
+}
+
+#slider-change-section-1 #scs1-2 {
+  width: 22vw;
+  height: 5vh;
+  margin-top: 5%;
+}
