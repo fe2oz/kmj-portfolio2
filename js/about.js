@@ -9,5 +9,27 @@ $(document).ready(function(){
 
     changeSectionOne.addEventListener("click", function(){
         document.getElementById("slider-change-section-1").style.display = "block";
-    })
+        document.getElementById("slider-change-section-2").style.display = "none";
+        document.getElementById("slider-change-section-3").style.display = "none";
+    });
+
+    changeSectionTwo.addEventListener("click", function(){
+        document.getElementById("slider-change-section-2").style.display = "block";
+        document.getElementById("slider-change-section-1").style.display = "none";
+        document.getElementById("slider-change-section-3").style.display = "none";
+    });
+
+    changeSectionThree.addEventListener("click", function(){
+        document.getElementById("slider-change-section-3").style.display = "block";
+        document.getElementById("slider-change-section-1").style.display = "none";
+        document.getElementById("slider-change-section-2").style.display = "none";
+    });
+
 });
+
+$(function(){
+    $("#slider-list-flex li").click(function(){
+        $("#slider-list-flex li").removeClass("active");
+        $(this).addClass("active");
+    })
+})

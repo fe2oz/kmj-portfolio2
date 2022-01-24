@@ -31,35 +31,54 @@ body{
         &-overlay{
             width: 25%; height: 0.1vh;
             background-color: rgba(255, 255, 255, 0.5);
-            position:absolute; left: 0; top: 6%;
+            position:absolute; left: 0; top: 10%;
             
         }
         h1{
+            height: 6vh;
             font-family: 'Pretendard-Light'; font-size: 1vw; font-weight: normal;
             text-align: center;
+            line-height: 6vh;
         }
-        ul{
-            width: 80%;
+        &-flex{
+            width: 100%;
+            position: relative; right: 10.5%;
 
             li{
-                font-family: 'Pretendard-Light'; font-size: 1vw; font-weight: normal;
-                height: 4.5vh;
-                line-height: 4.5vh;
-                text-align: center;
+                font-family: 'Pretendard-Light';
+                height: 6vh;
                 cursor: pointer;
+                display: flex; align-items: center;
+                padding-left: 30px;
+
+                div{
+                    font-size: 0.8vw;
+                    padding-left: 3%;
+                }
+                img{
+                    width: 1.5vw; height: 1.5vw;
+                }
+                &.active{
+                    background-color: #fff;
+                }
+                &:hover{
+                    background-color: #fff;
+                }
             }
         }
-        img{
+        #apple{
             display: inherit;
             margin:0 auto;
-            padding-top: 40%;
+            padding-top: 25%;
         }
     }
     &-change-section{
         width: 75%; height: 100%;
         border-radius: 0 10px 10px 0;
 
-        &-1{
+        &-1,
+        &-2,
+        &-3{
             width: 100%; height:100%;
             border-radius: 0 10px 10px 0;
 
@@ -68,7 +87,7 @@ body{
                 width: 20vw; height: 8vh;
                 position: relative;
                 background: #fff;
-                border-radius: .4em;
+                border-radius: .8em;
                 font-family: 'EliceDigitalBaeum_Regular';
                 display: flex; align-items: center; justify-content: center;
                 margin-left: 2%; margin-top: 2%;
@@ -88,9 +107,13 @@ body{
                 }
             }
             #scs1-2{
-                width: 22vw; height: 5vh;
-                margin-top: 5%;
+                width: 18vw; height: 5vh;
+                margin-top: 3%;
             }
+        }
+        &-2,
+        &-3{
+            display:none;
         }
     }
 }

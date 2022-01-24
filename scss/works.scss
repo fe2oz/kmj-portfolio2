@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body{
+    height: 100vh;
+    background-image: url(../img/bg.png);
+    background-size:cover;
+    margin:0; padding:0;
+    overflow: hidden;
+    display: flex; flex-flow: column; justify-content: center;
+
+    div{
+        cursor: default;
+    }
+}

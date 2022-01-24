@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body div {
+  cursor: default;
+}
