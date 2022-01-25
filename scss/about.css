@@ -1,0 +1,132 @@
+body {
+  height: 100vh;
+  background-image: url(../img/design-bg4.png);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+body div {
+  cursor: default;
+}
+
+#slider {
+  width: 80%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+#slider-list {
+  width: 25%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+#slider-list-overlay {
+  width: 25%;
+  height: 0.1vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+#slider-list h1 {
+  height: 6vh;
+  font-family: "Pretendard-Light";
+  font-size: 1vw;
+  font-weight: normal;
+  text-align: center;
+  line-height: 6vh;
+}
+#slider-list-flex {
+  width: 100%;
+  position: relative;
+  right: 10.5%;
+}
+#slider-list-flex li {
+  font-family: "Pretendard-Light";
+  height: 6vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+#slider-list-flex li div {
+  font-size: 0.8vw;
+  padding-left: 3%;
+}
+#slider-list-flex li img {
+  width: 1.5vw;
+  height: 1.5vw;
+}
+#slider-list-flex li.active {
+  background-color: #fff;
+}
+#slider-list-flex li:hover {
+  background-color: #fff;
+}
+#slider-list #apple {
+  display: inherit;
+  margin: 0 auto;
+  padding-top: 25%;
+}
+#slider-change-section {
+  width: 75%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+#slider-change-section-1, #slider-change-section-2, #slider-change-section-3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+#slider-change-section-1 #scs1-1,
+#slider-change-section-1 #scs1-2, #slider-change-section-2 #scs1-1,
+#slider-change-section-2 #scs1-2, #slider-change-section-3 #scs1-1,
+#slider-change-section-3 #scs1-2 {
+  width: 20vw;
+  height: 8vh;
+  position: relative;
+  background: #fff;
+  border-radius: 0.8em;
+  font-family: "EliceDigitalBaeum_Regular";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+#slider-change-section-1 #scs1-1:after,
+#slider-change-section-1 #scs1-2:after, #slider-change-section-2 #scs1-1:after,
+#slider-change-section-2 #scs1-2:after, #slider-change-section-3 #scs1-1:after,
+#slider-change-section-3 #scs1-2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-right-color: #fff;
+  border-left: 0;
+  margin-top: -6px;
+  margin-left: -6px;
+}
+#slider-change-section-1 #scs1-2, #slider-change-section-2 #scs1-2, #slider-change-section-3 #scs1-2 {
+  width: 18vw;
+  height: 5vh;
+  margin-top: 3%;
+}
+#slider-change-section-2, #slider-change-section-3 {
+  display: none;
+}

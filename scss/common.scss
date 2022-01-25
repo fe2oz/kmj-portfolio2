@@ -81,22 +81,6 @@ footer{
     }
 }
 
-.menu{
-    width: 100%; height: 100%;
-    position: absolute; top: 0; left:100%; z-index:999;
-    display: flex; flex-flow: column; justify-content: center;
-    padding-left: 10%;
-    line-height: 10vh;
-    backdrop-filter: blur(10px);
-    margin:0; 
-    
-    li a{
-        text-transform: uppercase;
-        font-size: 6em; font-family: 'yg-jalnan';
-        color: black;
-    }
-}
-
 #nav_big_text{
     position:fixed; right: 0.5em; bottom: 0.1em;
     transform: translateX(10%);

@@ -1,0 +1,118 @@
+ul, li, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@font-face {
+  font-family: "Pretendard-Light";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "twaysky";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EliceDigitalBaeum_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EliceDigitalBaeum_Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+header .open-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  padding-left: 3%;
+  filter: invert(1);
+}
+header .open-menu img {
+  width: 2vw;
+}
+header .show {
+  padding-right: 3%;
+  text-transform: uppercase;
+  font-family: "Pretendard-Light";
+  font-size: 1vw;
+  font-weight: bold;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+footer div:nth-of-type(1) {
+  padding-left: 3%;
+  text-transform: uppercase;
+  font-family: "Pretendard-Light";
+  font-size: 1vw;
+  font-weight: bold;
+}
+footer div:nth-of-type(2) {
+  padding-right: 3%;
+  text-transform: uppercase;
+  font-family: "Pretendard-Light";
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+#nav_big_text {
+  position: fixed;
+  right: 0.5em;
+  bottom: 0.1em;
+  transform: translateX(10%);
+  font-size: 15em;
+  font-family: "EliceDigitalBaeum_Bold";
+  color: #f56b6b;
+  text-transform: uppercase;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.35s;
+  transition-timing-function: ease-out;
+}
+#nav_big_text.big_text_active {
+  transform: translateX(0%);
+  opacity: 1;
+  z-index: 99999;
+}
+
+#nav_big_text.big_text_active {
+  transform: translateX(0%);
+  opacity: 1;
+}

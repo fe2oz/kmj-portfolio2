@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/works.css">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="scss/works.css">
+    <link rel="stylesheet" href="scss/common.css">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.8/TweenMax.min.js"></script>
     <script src="js/works.js"></script>
     <script src="js/main.js"></script>
 </head>
@@ -48,6 +49,103 @@
             <div id="nav_big_text"></div>
         </nav>
 
+        <div class="slider">
+            <div class="slider-wrapper flex">
+                <div class="slide flex">
+                    <div class="slider-image slider-link prev">
+                        <img src="https://goranvrban.com/codepen/img2.jpg">
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date"></div>
+                        <div class="slide-title"></div>
+                        <div class="slide-text"></div>
+                        <div class="slide-more"></div>
+                    </div>
+                </div>
+                <div class="slide flex">
+                    <div class="slider-image slider-link next">
+                        <img src="https://goranvrban.com/codepen/img3.jpg">
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date"></div>
+                        <div class="slide-title"></div>
+                        <div class="slide-text"></div>
+                        <div class="slide-more"></div>
+                    </div>
+                </div>
+                <div class="slide flex">
+                    <div class="slider-image slider-link next">
+                        <img src="https://goranvrban.com/codepen/img5.jpg">
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date"></div>
+                        <div class="slide-title"></div>
+                        <div class="slide-text"></div>
+                        <div class="slide-more"></div>
+                    </div>
+                </div>
+                <div class="slide flex">
+                    <div class="slider-image slider-link next">
+                        <img src="https://goranvrban.com/codepen/img6.jpg">
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date"></div>
+                        <div class="slide-title"></div>
+                        <div class="slide-text"></div>
+                        <div class="slide-more"></div>
+                    </div>
+                </div>
+                <div class="slide flex">
+                    <div class="slider-image slider-link next">
+
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date"></div>
+                        <div class="slide-title"></div>
+                        <div class="slide-text"></div>
+                        <div class="slide-more"></div>
+                    </div>
+                </div>
+                <div class="slide flex">
+                    <div class="slider-image slider-link next">
+
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date"></div>
+                        <div class="slide-title"></div>
+                        <div class="slide-text"></div>
+                        <div class="slide-more"></div>
+                    </div>
+                </div>
+                <div class="slide flex">
+                    <div class="slider-image slider-link next">
+
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date"></div>
+                        <div class="slide-title"></div>
+                        <div class="slide-text"></div>
+                        <div class="slide-more"></div>
+                    </div>
+                </div>
+                <div class="slide flex">
+                    <div class="slider-image slider-link next">
+
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date"></div>
+                        <div class="slide-title"></div>
+                        <div class="slide-text"></div>
+                        <div class="slide-more"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <a href="#" title="Previous" class="arrow slider-link prev"></a>
+                <a href="#" title="Next" class="arrow slider-link next"></a>
+            </div>
+        </div>
+
         <footer>
             <div>
                 junior<br> web publisher
@@ -56,11 +154,12 @@
                 2021.09.27.~2022.02.22.
             </div>
         </footer>
+    </div>
 
         <script>
             var timeline = new TimelineMax();
 
-                timeline.to(".menu", 0.8, {
+                timeline.to(".menu", 0.4, {
                     left: "0%",
                     ease: "expo.inOut"
                 });
@@ -77,6 +176,6 @@
                     timeline.reverse();
                 });
         </script>
-    </div>
+ 
 </body>
 </html>

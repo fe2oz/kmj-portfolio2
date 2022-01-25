@@ -21,10 +21,26 @@ body{
     position: absolute; top:0; left:0; z-index:99;
 }
 
+.menu{
+    width: 100%; height: 100%;
+    position: absolute; top: 0; left:100%; z-index:999;
+    display: flex; flex-flow: column; justify-content: center;
+    padding-left: 10%;
+    line-height: 10vh;
+    backdrop-filter: blur(10px);
+    margin:0; 
+    
+    li a{
+        text-transform: uppercase;
+        font-size: 6em; font-family: 'yg-jalnan';
+        color: white;
+    }
+}
+
 .slider{
     width: 100%; height: 100vh;
     position:relative;
-    background-image: url(../img/design-bg4.png); background-size: 100% 100%;
+    background-image: url(../img/works-bg.png); background-size: 100% 100%;
 
     &-main-text{
         width: 200%; height: 100%;

@@ -2,7 +2,7 @@
 
 body{
     height: 100vh;
-    background-image: url(../img/bg.png);
+    background-image: url(../img/works-bg2.png);
     background-size:cover;
     margin:0; padding:0;
     overflow: hidden;
@@ -11,4 +11,82 @@ body{
     div{
         cursor: default;
     }
+}
+
+.menu{
+    width: 100%; height: 100%;
+    position: absolute; top: 0; left:100%; z-index:999;
+    display: flex; flex-flow: column; justify-content: center;
+    padding-left: 10%;
+    line-height: 10vh;
+    backdrop-filter: blur(10px);
+    margin:0; 
+    
+    li a{
+        text-transform: uppercase;
+        font-size: 6em; font-family: 'yg-jalnan';
+        color: white;
+    }
+}
+
+.slider{
+    width: 100%; height: 100vh;
+    display: flex; flex-flow: column; justify-content: center;
+
+    &-wrapper{
+        margin-left: 11vw;
+
+        div{
+            position:relative;
+        }
+    }
+    &-image{
+        height: 25vw;
+
+        img{
+            width: 24vw; height: 100%;
+            filter:grayscale(0.8);
+            opacity:0.5;
+
+            &:hover{
+                filter:grayscale(0);
+                opacity:1;
+            }
+        }
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.slide-content{
+    width: 45vw;
+}
+
+.arrows{
+    width: 4vw;
+}
+
+.arrow {
+    display: inline-block; position: absolute; 
+    width: 1.2vw; height: 1.2vw; 
+    background: transparent; 
+    text-indent: -9999px; 
+    border-top: 0.15vw solid #fff; border-left: 0.15vw solid #fff; 
+    transition: all .1s ease-in-out; text-decoration: none; 
+    color: transparent;
+}
+
+.arrow.prev {
+    transform: rotate(-45deg); left: 65%; bottom:35%;
+}
+.arrow.next {
+    transform: rotate(135deg); right: 30%; bottom:35%;
+}
+.arrow:before {
+    display: block; 
+    height: 200%; width: 200%; 
+    margin-left: -50%; margin-top: -50%; content: ""; 
+    transform: rotate(45deg);
 }
