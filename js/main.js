@@ -16,21 +16,37 @@ $(document).ready(function(){
                 })
             }
     
-    const aboutCircle = document.getElementById("about-circle");
-    const aboutShow = document.getElementById("about-show");
-    const worksCircle = document.getElementById("works-circle");
-    const worksShow = document.getElementById("works-show");
 
-    aboutCircle.addEventListener("mouseover", function(){
-        aboutShow.style.opacity = "1"
+
+
+    /////////////
+
+    const iframeOne = document.getElementById("iframe_one");
+    const iframeTwo = document.getElementById("iframe_two");
+    const iframeThree = document.getElementById("iframe_three");
+    const iframeFour = document.getElementById("iframe_four");
+    const iframeFive = document.getElementById("iframe_five");
+    const iframeSix = document.getElementById("iframe_six");
+    const iframeSeven = document.getElementById("iframe_seven");
+    const iframeEight = document.getElementById("iframe_eight");
+    const iframeList = document.getElementById("pp_site");
+    const iframeClose = document.getElementById("close_iframe");
+
+    iframeClose.addEventListener("click", function(){
+        Close();
     });
-    aboutCircle.addEventListener("mouseout", function(){
-        aboutShow.style.opacity = "0"
+
+    function Close(){
+        iframeList.style.display = "none";
+    };
+    function changeIframeOne(){
+        iframeList.style.display = "block";
+        iframeList.src = "works==page1.html";
+    };
+
+    iframeOne.addEventListener("click", function(){
+        changeIframeOne();
     });
-    worksCircle.addEventListener("mouseover", function(){
-        worksShow.style.opacity = "1"
-    });
-    worksCircle.addEventListener("mouseout", function(){
-        worksShow.style.opacity = "0"
-    });
+
+
 })

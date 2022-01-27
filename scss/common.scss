@@ -92,12 +92,13 @@ footer{
     position:fixed; right: 0.5em; bottom: 0.1em;
     transform: translateX(10%);
     font-size: 15em; font-family: 'EliceDigitalBaeum_Bold';
-    color:  hsl(0, 87%, 69%);
+    color: white;
     text-transform: uppercase;
     opacity: 0;
     z-index: -1;
     transition: .35s;
     transition-timing-function: ease-out;
+    text-shadow: 20px 20px 1px hsl(0, 87%, 69%);
 
     &.big_text_active{
         transform: translateX(0%);

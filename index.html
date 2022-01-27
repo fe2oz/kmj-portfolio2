@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="scss/common.css">
+    <link rel="stylesheet" href="css/common.css">
     
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -46,39 +46,50 @@
             <div id="nav_big_text"></div>
         </nav>
 
-        <input class="slider__dot" type="radio" name="slider" title="slide1" checked="checked" />
+        <input class="slider__dot" type="radio" name="slider" title="slide1"  />
         <input class="slider__dot" type="radio" name="slider" title="slide2" />
-        <input class="slider__dot" type="radio" name="slider" title="slide3" />
+        <input class="slider__dot" type="radio" name="slider" title="slide3" checked="checked"/>
         <input class="slider__dot" type="radio" name="slider" title="slide4" />
     
         <div class="slider__inner" id="main">
             <div class="slider__body" style="background-image: url(img/design-bg-1.png);">
-
-                <p class="slider__text">
-
-                </p>
+                <img id="menu__click" src="img/-2.png" alt="">
+                <!-- <div> 아이콘 제작자 <a href="https://flat-icons.com/" title="Flat Icons"> Flat Icons </a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com'</a></div> -->
             </div>
 
             <div class="slider__body" style="background-image: url(img/works-bg1.png);" id="about">
-                <h2 class="slider__caption"></h2>
-                <p class="slider__text">
+                <p class="slider__text" id="about__text">
+                    안녕하세요! 신입 웹 퍼블리셔 <span>김민중</span>입니다.<br><br>
+                    차근차근 <span>기본을 쌓아</span> 실무에서 여러 가지를 구현하며 제 역량을 펼치는 것이 목표입니다.<br><br>
+                    욕심만 앞서 나가지 않게 뼈대를 갖추어 이를 발판 삼아 <span>목표를 향해 도약</span>할 것입니다.
                 </p>
                 <img id="cube" src="img/image-from-rawpixel-id-4044703-png.png" alt="">
                 <img id="cube1" src="img/image-from-rawpixel-id-4044703-png2.png" alt="">
             </div>
 
             <div class="slider__body" style="background-image: url(img/works-bg2.png);" id="works">
-                <h2 class="slider__caption"></h2>
-                <p class="slider__text">
+                <nav>
+                    <ul id="works_list">
+                        <li id="iframe_one">#01</li>
+                        <li id="iframe_two">#02</li>
+                        <li id="iframe_three">#03</li>
+                        <li id="iframe_four">#04</li>
+                        <li id="iframe_five">#05</li>
+                        <li id="iframe_six">#06</li>
+                        <li id="iframe_seven">#07</li>
+                        <li id="iframe_eight">#08</li>
+                    </ul>
+                </nav>
 
-                </p>
+                <div id="works_pp">
+                    <iframe id="pp_site" src="" frameborder="0" width="100%" height="100%"></iframe>
+                    <img id="close_iframe" src="img/cross.png" alt="">
+                </div>
             </div>
 
             <div class="slider__body">
-                <h2 class="slider__caption">diamond</h2>
+                <h2 class="slider__caption"></h2>
                 <p class="slider__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos,
-                    corporis minima!
                 </p>
             </div>
         </div>
@@ -95,28 +106,16 @@
 
     <script>
        window.onload = () => {
-           let tl = gsap.timeline(); // one-about
-           tl.from("#one-about-show", 1.8, {
-               y: 100,
-               ease: "expo.inOut",
-               opacity:0,
-               stagger: {
-                   amout: 0.3
-               }
-           })
-           .to("#one-about-show", 1.8, {
-               delay: 0.3,
-               ease: "power4.out",
-               css: {left: "25%"}
-           })
-       }
-
-       let tl1 = gsap.timeline();
+           let tl1 = gsap.timeline();
             tl1.to(".cutton", 1.1,{
                 width: 0,
                 ease: "expo.inOut",
                 delay: 0.5
             })
+
+       }
+
+
 
     var timeline = new TimelineMax();
 
