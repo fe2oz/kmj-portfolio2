@@ -30,6 +30,11 @@ body {
   font-family: 'Pretendard-Light';
   background-color: #fff;
   overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body div {
