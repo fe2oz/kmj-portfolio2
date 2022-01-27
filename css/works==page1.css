@@ -101,6 +101,7 @@ body div {
 .section-two .text {
   width: 35%;
   height: 100%;
+  opacity: 0;
 }
 
 .section-two .text div {
