@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="scss/common.css">
     
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
@@ -15,9 +15,9 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-    <div class="wrap">
+    <div class="slider">
         <div class="cutton"></div>
-
+        
         <header>
             <div class="open-menu">
                 <img src="img/8679804_menu_navigation_icon.png" alt="">
@@ -33,10 +33,10 @@
                     <a href="#">close</a>
                 </li>
                 <li>
-                    <a href="#" onclick="location.href='about.html';" >about</a>
+                    <a href="#about">about</a>
                 </li>
                 <li>
-                    <a href="#" onclick="location.href='works.html';">works</a>
+                    <a href="#works">works</a>
                 </li>
                 <li>
                     <a href="#">contact</a>
@@ -46,30 +46,72 @@
             <div id="nav_big_text"></div>
         </nav>
 
-        <div class="slider">
-            <div class="slider-about">
-                <img id="about-circle" src="img/circle.png" alt="" onclick="location.href='about.html';" >
-                <p id="about-show">ABOUT</p>
+        <input class="slider__dot" type="radio" name="slider" title="slide1" checked="checked" />
+        <input class="slider__dot" type="radio" name="slider" title="slide2" />
+        <input class="slider__dot" type="radio" name="slider" title="slide3" />
+        <input class="slider__dot" type="radio" name="slider" title="slide4" />
+    
+        <div class="slider__inner" id="main">
+            <div class="slider__body" style="background-image: url(img/design-bg-1.png);">
+
+                <p class="slider__text">
+
+                </p>
             </div>
-            <div class="slider-works">
-                <p id="works-show">WORKS</p>
-                <img id="works-circle" src="img/circle.png" alt="" onclick="location.href='works.html';">
+
+            <div class="slider__body" style="background-image: url(img/works-bg1.png);" id="about">
+                <h2 class="slider__caption"></h2>
+                <p class="slider__text">
+                </p>
+                <img id="cube" src="img/image-from-rawpixel-id-4044703-png.png" alt="">
+                <img id="cube1" src="img/image-from-rawpixel-id-4044703-png2.png" alt="">
+            </div>
+
+            <div class="slider__body" style="background-image: url(img/works-bg2.png);" id="works">
+                <h2 class="slider__caption"></h2>
+                <p class="slider__text">
+
+                </p>
+            </div>
+
+            <div class="slider__body">
+                <h2 class="slider__caption">diamond</h2>
+                <p class="slider__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos,
+                    corporis minima!
+                </p>
             </div>
         </div>
-
-        <footer>
-            <div>
-                junior<br> web publisher
-            </div>
-            <div>
-                2021.09.27.~2022.02.22.
-            </div>
-        </footer>
-
     </div>
 
+    <footer>
+        <div>
+            junior<br> web publisher
+        </div>
+        <div>
+            2021.09.27.~2022.02.22.
+        </div>
+    </footer>
+
     <script>
-        let tl1 = gsap.timeline();
+       window.onload = () => {
+           let tl = gsap.timeline(); // one-about
+           tl.from("#one-about-show", 1.8, {
+               y: 100,
+               ease: "expo.inOut",
+               opacity:0,
+               stagger: {
+                   amout: 0.3
+               }
+           })
+           .to("#one-about-show", 1.8, {
+               delay: 0.3,
+               ease: "power4.out",
+               css: {left: "25%"}
+           })
+       }
+
+       let tl1 = gsap.timeline();
             tl1.to(".cutton", 1.1,{
                 width: 0,
                 ease: "expo.inOut",

@@ -9,48 +9,55 @@ a{
 }
 
 @font-face {
-    font-family: 'Pretendard-Light';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'twaysky';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'EliceDigitalBaeum_Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'EliceDigitalBaeum_Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-@font-face {
-    font-family: 'yg-jalnan';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+  }
+  @font-face {
+      font-family: 'Pretendard-Light';
+      src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+      font-weight: 300;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'twaysky';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twaysky.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'EliceDigitalBaeum_Bold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'EliceDigitalBaeum_Regular';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'yg-jalnan';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+  @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
-
-header{
+  header{
     width: 100%; height: 10vh;
     display: flex; justify-content: space-between; align-items: center;
-    position: absolute; top:0; z-index:10;
-
+    position: fixed; top:0; z-index:10;
+  
     .open-menu{
         display: flex; align-items: center; justify-content: flex-end;
         cursor: pointer;
         padding-left: 3%;
         filter: invert(1);
-
+  
         img{
             width: 2vw;
         }
@@ -61,7 +68,7 @@ header{
         font-family: 'Pretendard-Light'; font-size: 1vw; font-weight: bold;
         color: white;
     }
-}
+  }
 
 footer{
     width: 100%; height: 10vh;
@@ -101,4 +108,11 @@ footer{
 #nav_big_text.big_text_active{
     transform: translateX(0%);
     opacity: 1;
+}
+
+#menu-1{
+    width: 5vw;
+        text-transform: uppercase;
+      font-size: 6em; font-family: 'yg-jalnan';
+      color: white;
 }

@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 ul, li, ol {
   list-style: none;
 }
@@ -5,6 +7,13 @@ ul, li, ol {
 a {
   text-decoration: none;
   color: black;
+}
+
+@font-face {
+  font-family: 'EliceDigitalBaeum_Regular';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -54,7 +63,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 10;
 }
@@ -121,37 +130,6 @@ footer div:nth-of-type(2) {
   font-weight: bold;
 }
 
-.menu {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  z-index: 999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 10%;
-  line-height: 10vh;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  margin: 0;
-}
-
-.menu li a {
-  text-transform: uppercase;
-  font-size: 6em;
-  font-family: 'yg-jalnan';
-  color: black;
-}
-
 #nav_big_text {
   position: fixed;
   right: 0.5em;
@@ -181,4 +159,12 @@ footer div:nth-of-type(2) {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   opacity: 1;
+}
+
+#menu-1 {
+  width: 5vw;
+  text-transform: uppercase;
+  font-size: 6em;
+  font-family: 'yg-jalnan';
+  color: white;
 }
