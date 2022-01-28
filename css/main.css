@@ -147,18 +147,6 @@ html {
   -webkit-animation: check 0.5s linear forwards;
           animation: check 0.5s linear forwards;
 }
-.slider__dot:checked:nth-of-type(1) ~ .slider__inner {
-  transform: translateX(0%);
-}
-.slider__dot:checked:nth-of-type(2) ~ .slider__inner {
-  transform: translateX(-25%);
-}
-.slider__dot:checked:nth-of-type(3) ~ .slider__inner {
-  transform: translateX(-50%);
-}
-.slider__dot:checked:nth-of-type(4) ~ .slider__inner {
-  transform: translateX(-75%);
-}
 .slider__inner {
   position: absolute;
   top: 0;

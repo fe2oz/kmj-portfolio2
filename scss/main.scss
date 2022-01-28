@@ -112,14 +112,6 @@ html{
 		&:checked {
 			background-color: $active-color;
 			animation: check 0.5s linear forwards;
-
-			@for $i from 0 to $slider-length {
-				&:nth-of-type(#{$i+1}) {
-				~ .slider__inner {
-					transform: translateX((-100% * $i) / $slider-length);
-					}
-				}
-			}
 		}
 	}
 	
