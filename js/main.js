@@ -112,7 +112,6 @@ $(function(){
 
     $("#test1 a").click(function(){
         $(".slider__inner").css({"transform":"translateX(0%)"});
-        
         var checked = $(".dot1").is(":checked");
         $(".dot1").prop("checked", !checked);
     });
@@ -134,14 +133,14 @@ $(function(){
 
     $(".slider__dot:nth-of-type(1)").click(function(){
         $(".slider__inner").css({"transform":"translateX(0%)"});
-    })
+    });
     $(".slider__dot:nth-of-type(2)").click(function(){
         $(".slider__inner").css({"transform":"translateX(-25%)"});
-    })
+    });
     $(".slider__dot:nth-of-type(3)").click(function(){
         $(".slider__inner").css({"transform":"translateX(-50%)"});
-    })
+    });
     $(".slider__dot:nth-of-type(4)").click(function(){
         $(".slider__inner").css({"transform":"translateX(-75%)"});
-    })
+    });
 });
