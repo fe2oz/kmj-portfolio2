@@ -112,18 +112,23 @@ $(function(){
 
     $("#test1 a").click(function(){
         $(".slider__inner").css({"transform":"translateX(0%)"});
-        $("input:radio[class='dot1']").is(":checked");
+        
+        var checked = $(".dot1").is(":checked");
+        $(".dot1").prop("checked", !checked);
     });
     $("#test2 a").click(function(){
         $(".slider__inner").css({"transform":"translateX(-25%)"});
-        $("input:radio[class='dot2']").is(":checked");
+        var checked = $(".dot2").is(":checked");
+        $(".dot2").prop("checked", !checked);
     });
     $("#test3 a").click(function(){
         $(".slider__inner").css({"transform":"translateX(-50%)"});
-        $("input:radio[class='dot3']").is(":checked");
+        var checked = $(".dot3").is(":checked");
+        $(".dot3").prop("checked", !checked);
     });
     $("#test4 a").click(function(){
         $(".slider__inner").css({"transform":"translateX(-75%)"});
-        $("input:radio[class='dot4']").is(":checked");
+        var checked = $(".dot4").is(":checked");
+        $(".dot4").prop("checked", !checked);
     });
 });
