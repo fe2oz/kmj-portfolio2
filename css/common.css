@@ -74,6 +74,11 @@ header .show {
   font-weight: bold;
   color: white;
 }
+header #test {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
 footer {
   width: 100%;

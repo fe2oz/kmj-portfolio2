@@ -124,9 +124,7 @@ html{
 	}
 	
 	&__inner {
-		position: absolute;
-		top: 0;
-		left: 0;
+		position: absolute; top: 0; left: 0;
 		width: 100% * $slider-length;
 		height: 100%;
 		transition: all 1s ease-out;
@@ -142,8 +140,8 @@ html{
 		justify-content: center;
 		padding: 2rem;
 		text-align: center;
-    position: relative;
-    background-size: 100% 100%;
+		position: relative;
+		background-size: 100% 100%;
 	}
 	
 	&__image {
@@ -183,7 +181,7 @@ html{
 }
 
 .menu{
-  width: 100%; height: 100%;
+  width: 100%; height: 100vh;
   position: absolute; top: 0; left:100%; z-index:999;
   display: flex; flex-flow: column; justify-content: center;
   padding-left: 10%;
@@ -250,11 +248,15 @@ html{
 	position: absolute; left: 1%; top: 25%;
     
     li{
-        color: #fff;
         font-size: 1.5vw;
 		cursor: pointer;
 		padding: 5px;
 		margin-bottom: 5%;
+		color: #fff;
+
+		&.active{
+			color: #f5a296;
+		}
     }
 }
 #works_pp{

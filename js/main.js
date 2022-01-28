@@ -15,9 +15,6 @@ $(document).ready(function(){
                     navTextCopy.classList.remove("big_text_active");
                 })
             }
-    
-
-
 
     /////////////
 
@@ -38,6 +35,7 @@ $(document).ready(function(){
 
     function Close(){
         iframeList.style.display = "none";
+        $(".menu li a").css("color", "white");
     };
     function changeIframeOne(){
         iframeList.style.display = "block";
@@ -74,26 +72,58 @@ $(document).ready(function(){
 
     iframeOne.addEventListener("click", function(){
         changeIframeOne();
+        $(".menu li a").css("color", "black");
     });
     iframeTwo.addEventListener("click", function(){
         changeIframeTwo();
+        $(".menu li a").css("color", "black");
     });
     iframeThree.addEventListener("click", function(){
         changeIframeThree();
+        $(".menu li a").css("color", "black");
     });
     iframeFour.addEventListener("click", function(){
         changeIframeFour();
+        $(".menu li a").css("color", "black");
     });
     iframeFive.addEventListener("click", function(){
         changeIframeFive();
+        $(".menu li a").css("color", "black");
     });
     iframeSix.addEventListener("click", function(){
         changeIframeSix();
+        $(".menu li a").css("color", "black");
     });
     iframeSeven.addEventListener("click", function(){
         changeIframeSeven();
+        $(".menu li a").css("color", "black");
     });
     iframeEight.addEventListener("click", function(){
         changeIframeEight();
+        $(".menu li a").css("color", "black");
     });
 })
+
+$(function(){
+    $("#works_list li").click(function(){
+        $("#works_list li").removeClass("active");
+        $(this).addClass("active")
+    });
+
+    $("#test1 a").click(function(){
+        $(".slider__inner").css({"transform":"translateX(0%)"});
+        $("input:radio[class='dot1']").is(":checked");
+    });
+    $("#test2 a").click(function(){
+        $(".slider__inner").css({"transform":"translateX(-25%)"});
+        $("input:radio[class='dot2']").is(":checked");
+    });
+    $("#test3 a").click(function(){
+        $(".slider__inner").css({"transform":"translateX(-50%)"});
+        $("input:radio[class='dot3']").is(":checked");
+    });
+    $("#test4 a").click(function(){
+        $(".slider__inner").css({"transform":"translateX(-75%)"});
+        $("input:radio[class='dot4']").is(":checked");
+    });
+});
