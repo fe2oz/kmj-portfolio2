@@ -131,4 +131,17 @@ $(function(){
         var checked = $(".dot4").is(":checked");
         $(".dot4").prop("checked", !checked);
     });
+
+    $(".slider__dot:nth-of-type(1)").click(function(){
+        $(".slider__inner").css({"transform":"translateX(0%)"});
+    })
+    $(".slider__dot:nth-of-type(2)").click(function(){
+        $(".slider__inner").css({"transform":"translateX(-25%)"});
+    })
+    $(".slider__dot:nth-of-type(3)").click(function(){
+        $(".slider__inner").css({"transform":"translateX(-50%)"});
+    })
+    $(".slider__dot:nth-of-type(4)").click(function(){
+        $(".slider__inner").css({"transform":"translateX(-75%)"});
+    })
 });
