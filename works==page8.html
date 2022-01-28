@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>works1</title>
+
+    <link rel="stylesheet" href="css/works==page8.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="cutton"></div>
+        <div id="slider"></div>
+
+        <div class="section">
+            <div class="section-one">
+                <div class="section-one-box">
+                    <h1>VAMIR Website</h1>
+                    <h2>"2021.10.08. ~ 2021.10.27."</h2>
+                </div>
+            </div>
+
+            <div class="section-two">
+                <div class="text">
+                    <div>
+                        <h1>VAMIR Website</h1>
+                        <h2>"2021.10.08. ~ 2021.10.27."</h2><Br>
+        
+                        <h3>기본적인 html, css를 갖추고 제작한 첫 홈페이지입니다.<br><br>
+                            모든 게 생소했던 터라 원하는 곳으로 배치는 어떻게 해야하는 건지, 크기는 얼마나
+                            잡아야 하는 건지 우왕좌왕했었던 첫 작업물 입니다.<br><br>
+                            메인 페이지와 1개의 서브 페이지로 구성되어 있습니다.</h3>
+                    </div>       
+                </div>
+    
+                <div class="photo">
+                    <img src="img/7-1.jpeg" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/shoppingmall.html/';">
+                    <img src="img/7-2.jpeg" alt="">
+                    <img src="img/7-3.jpeg" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/shoppingmall.html/sub.html';">
+                    <img src="img/7-4.jpeg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+         window.onload = () => {
+           let tl1 = gsap.timeline();
+            tl1.to(".cutton", 1.1,{
+                width: 0,
+                ease: "expo.inOut",
+                delay: 0.5
+            })
+
+        }
+
+        $(function(){
+            var scroll_pos = 0;
+            $(document).scroll(function(){
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 700){
+                    $(".text").css("opacity", "1")
+                }else{
+                    $(".text").css("opacity", "0")
+                }
+            })
+        })
+    </script>
+</body>
+</html>

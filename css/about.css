@@ -5,18 +5,10 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: column;
+  justify-content: center;
 }
-
 body div {
   cursor: default;
 }
@@ -33,20 +25,13 @@ body div {
   width: 80%;
   height: 80vh;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
 }
-
 #slider-list {
   width: 25%;
   height: 100%;
@@ -55,7 +40,6 @@ body div {
   position: relative;
   background-color: rgba(255, 255, 255, 0.35);
 }
-
 #slider-list-overlay {
   width: 25%;
   height: 0.1vh;
@@ -64,71 +48,56 @@ body div {
   left: 0;
   top: 10%;
 }
-
 #slider-list h1 {
   height: 6vh;
-  font-family: 'Pretendard-Light';
+  font-family: "Pretendard-Light";
   font-size: 1vw;
   font-weight: normal;
   text-align: center;
   line-height: 6vh;
 }
-
 #slider-list-flex {
   width: 100%;
   position: relative;
   right: 10.5%;
 }
-
 #slider-list-flex li {
-  font-family: 'Pretendard-Light';
+  font-family: "Pretendard-Light";
   height: 6vh;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-left: 30px;
 }
-
 #slider-list-flex li div {
   font-size: 0.8vw;
   padding-left: 3%;
 }
-
 #slider-list-flex li img {
   width: 1.5vw;
   height: 1.5vw;
 }
-
 #slider-list-flex li.active {
   background-color: #fff;
 }
-
 #slider-list-flex li:hover {
   background-color: #fff;
 }
-
 #slider-list #apple {
   display: inherit;
   margin: 0 auto;
   padding-top: 25%;
 }
-
 #slider-change-section {
   width: 75%;
   height: 100%;
   border-radius: 0 10px 10px 0;
 }
-
 #slider-change-section-1, #slider-change-section-2, #slider-change-section-3 {
   width: 100%;
   height: 100%;
   border-radius: 0 10px 10px 0;
 }
-
 #slider-change-section-2, #slider-change-section-3 {
   display: none;
 }
@@ -137,62 +106,43 @@ body div {
   width: 100%;
   height: 100%;
 }
-
 .msger-chat {
   overflow-y: auto;
   padding: 10px;
 }
-
 .msger-chat::-webkit-scrollbar {
   width: 6px;
 }
-
 .msger-chat::-webkit-scrollbar-thumb {
   background: #ED7781;
 }
-
 .msger-chat::-webkit-scrollbar-track {
   background: white;
 }
 
 .msg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   margin-bottom: 10px;
 }
-
 .msg:last-of-type {
   margin: 0;
 }
-
 .msg-bubble {
   max-width: 450px;
   padding: 15px;
   background: var(--left-msg-bg);
 }
-
 .msg-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
 }
-
 .msg-info-name {
   margin-right: 10px;
   font-weight: bold;
 }
-
 .msg-info-time {
   font-size: 0.85em;
 }
@@ -202,10 +152,7 @@ body div {
 }
 
 .right-msg {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .right-msg .msg-bubble {

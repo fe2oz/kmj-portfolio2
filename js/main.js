@@ -43,10 +43,57 @@ $(document).ready(function(){
         iframeList.style.display = "block";
         iframeList.src = "works==page1.html";
     };
+    function changeIframeTwo(){
+        iframeList.style.display = "block";
+        iframeList.src = "works==page2.html";
+    };
+    function changeIframeThree(){
+        iframeList.style.display = "block";
+        iframeList.src = "works==page3.html";
+    };
+    function changeIframeFour(){
+        iframeList.style.display = "block";
+        iframeList.src = "works==page4.html";
+    };
+    function changeIframeFive(){
+        iframeList.style.display = "block";
+        iframeList.src = "works==page5.html";
+    };
+    function changeIframeSix(){
+        iframeList.style.display = "block";
+        iframeList.src = "works==page6.html";
+    };
+    function changeIframeSeven(){
+        iframeList.style.display = "block";
+        iframeList.src = "works==page7.html";
+    };
+    function changeIframeEight(){
+        iframeList.style.display = "block";
+        iframeList.src = "works==page8.html";
+    };
 
     iframeOne.addEventListener("click", function(){
         changeIframeOne();
     });
-
-
+    iframeTwo.addEventListener("click", function(){
+        changeIframeTwo();
+    });
+    iframeThree.addEventListener("click", function(){
+        changeIframeThree();
+    });
+    iframeFour.addEventListener("click", function(){
+        changeIframeFour();
+    });
+    iframeFive.addEventListener("click", function(){
+        changeIframeFive();
+    });
+    iframeSix.addEventListener("click", function(){
+        changeIframeSix();
+    });
+    iframeSeven.addEventListener("click", function(){
+        changeIframeSeven();
+    });
+    iframeEight.addEventListener("click", function(){
+        changeIframeEight();
+    });
 })

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>works1</title>
+
+    <link rel="stylesheet" href="css/works==page6.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="cutton"></div>
+        <div id="slider"></div>
+
+        <div class="section">
+            <div class="section-one">
+                <div class="section-one-box">
+                    <h1>Machine Gun Kelly Website</h1>
+                    <h2>"2021.11.16. ~ 2021.11.24."</h2>
+                </div>
+            </div>
+
+            <div class="section-two">
+                <div class="text">
+                    <div>
+                        <h1>Machine Gun Kelly Website</h1>
+                        <h2>"2021.11.16. ~ 2021.11.24."</h2><Br>
+        
+                        <h3>미국의 래퍼이자 가수인 머신 건 켈리의 홈페이지를 제작하였습니다.<br><br>
+                            최근 발매한 앨범의 콘셉트와 기존 가수의 홈페이지를 참고하여 주로 검은색과 포인트로 핑크색 색상을
+                            사용하였습니다.<br><br>
+                            메인 페이지와 1개의 서브 페이지로 구성되어 있으며, 모바일 사용자에 맞게 반응형 홈페이지로 제작되었습니다.<br><br>
+                            상단 메뉴 중 TOUR를 클릭하면 해당 서브 페이지로 이동합니다.</h3>
+                    </div>       
+                </div>
+    
+                <div class="photo">
+                    <img src="img/6-1.jpeg" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/portfolio3-1/';">
+                    <img src="img/6-2.jpeg" alt="">
+                    <img src="img/6-3.jpeg" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/portfolio3-1/sub_tour.html';">
+                    <img src="img/6-4.jpeg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+         window.onload = () => {
+           let tl1 = gsap.timeline();
+            tl1.to(".cutton", 1.1,{
+                width: 0,
+                ease: "expo.inOut",
+                delay: 0.5
+            })
+
+        }
+
+        $(function(){
+            var scroll_pos = 0;
+            $(document).scroll(function(){
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 700){
+                    $(".text").css("opacity", "1")
+                }else{
+                    $(".text").css("opacity", "0")
+                }
+            })
+        })
+    </script>
+</body>
+</html>

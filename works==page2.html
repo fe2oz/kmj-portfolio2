@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>works1</title>
+
+    <link rel="stylesheet" href="css/works==page2.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="cutton"></div>
+        <div id="slider"></div>
+
+        <div class="section">
+            <div class="section-one">
+                <div class="section-one-box">
+                    <h1>Mononoke Hime Website</h1>
+                    <h2>"2021.12.13. ~ 2021.12.20."</h2>
+                </div>
+            </div>
+
+            <div class="section-two">
+                <div class="text">
+                    <div>
+                        <h1>Mononoke Hime Website</h1>
+                        <h2>"2021.12.13. ~ 2021.12.20."</h2><Br>
+        
+                        <h3>스튜디오 지브리사의 영화 모노노케 히메 홈페이지를 제작하였습니다. 영화의 분위기를 생각해
+                            흰색과 파란색을 주로 사용하였고, 플러그인을 사용하여 눈이 내리는 효과를 연출하였습니다.<br><br>
+                            메인 페이지와 3개의 서브 페이지로 구성되어 있으며, 모바일 사용자에 맞게 반응형 홈페이지로 제작되었습니다.<br><br>
+                            상단 메뉴 중 ABOUT / CLIP / GALLERY 를 클릭하면 각 해당 서브 페이지로 이동합니다.</h3>
+                    </div>       
+                </div>
+    
+                <div class="photo">
+                    <img src="img/2-1.png" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/mononoke-hime/';">
+                    <img src="img/2-2.png" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/mononoke-hime/about.html';">
+                    <img src="img/2-3.png" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/mononoke-hime/trailer.html';">
+                    <img src="img/2-4.png" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/mononoke-hime/gallery.html';">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+         window.onload = () => {
+           let tl1 = gsap.timeline();
+            tl1.to(".cutton", 1.1,{
+                width: 0,
+                ease: "expo.inOut",
+                delay: 0.5
+            })
+
+        }
+
+        $(function(){
+            var scroll_pos = 0;
+            $(document).scroll(function(){
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 700){
+                    $(".text").css("opacity", "1")
+                }else{
+                    $(".text").css("opacity", "0")
+                }
+            })
+        })
+    </script>
+</body>
+</html>

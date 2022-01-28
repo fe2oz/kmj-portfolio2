@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>works1</title>
+
+    <link rel="stylesheet" href="css/works==page7.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="cutton"></div>
+        <div id="slider"></div>
+
+        <div class="section">
+            <div class="section-one">
+                <div class="section-one-box">
+                    <h1>Millie Website</h1>
+                    <h2>"2022.01.17. ~ 2022.01.25."</h2>
+                </div>
+            </div>
+
+            <div class="section-two">
+                <div class="text">
+                    <div>
+                        <h1>Millie Website</h1>
+                        <h2>"2022.01.17. ~ 2022.01.25."</h2><Br>
+        
+                        <h3>카카오 api 데이터를 받아 ajax를 사용하여 밀리의 서재 홈페이지를 제작하였습니다.<br>
+                        메인 페이지, 1개의 서브 페이지로 구성되어 있습니다.<br><br>
+                        상단의 로그인 버튼을 클릭하시면 서브 페이지로 이동합니다.</h3>
+                    </div>       
+                </div>
+    
+                <div class="photo">
+                    <img src="img/millie1.jpeg" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/millie/';">
+                    <img src="img/millie2.jpeg" alt="">
+                    <img src="img/millie3.jpeg" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/millie/sub.html';">
+                    <img src="img/millie4.jpeg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+         window.onload = () => {
+           let tl1 = gsap.timeline();
+            tl1.to(".cutton", 1.1,{
+                width: 0,
+                ease: "expo.inOut",
+                delay: 0.5
+            })
+
+        }
+
+        $(function(){
+            var scroll_pos = 0;
+            $(document).scroll(function(){
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 700){
+                    $(".text").css("opacity", "1")
+                }else{
+                    $(".text").css("opacity", "0")
+                }
+            })
+        })
+    </script>
+</body>
+</html>

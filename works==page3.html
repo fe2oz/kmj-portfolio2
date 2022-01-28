@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>works1</title>
+
+    <link rel="stylesheet" href="css/works==page3.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="cutton"></div>
+        <div id="slider"></div>
+
+        <div class="section">
+            <div class="section-one">
+                <div class="section-one-box">
+                    <h1>The weeknd Website</h1>
+                    <h2>"2021.12.06. ~ 2021.12.14."</h2>
+                </div>
+            </div>
+
+            <div class="section-two">
+                <div class="text">
+                    <div>
+                        <h1>The weeknd Website</h1>
+                        <h2>"2021.12.06. ~ 2021.12.14."</h2><Br>
+        
+                        <h3>캐나다의 가수이자 프로듀서인 위켄드의 홈페이지를 제작하였습니다. 최근 발매한 앨범의
+                            콘셉트와 기존 가수의 홈페이지를 참고하여 주로 앨범 색상에 있는 파란색과 검은색을 사용하였습니다.<br><br>
+                            메인 페이지와 동일한 레이아웃인 5개의 서브 페이지로 구성되어 있으며, 모바일 사용자에 맞게 반응형 홈페이지로 제작되었습니다.<br><br>
+                            상단 메뉴 중 MUSIC 을 클릭하면 해당 서브 페이지로 이동합니다.</h3>
+                    </div>       
+                </div>
+    
+                <div class="photo">
+                    <img src="img/3-1.jpeg" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/TheWeeknd/';">
+                    <img src="img/3-2.jpeg" alt="">
+                    <img src="img/3-3.jpeg" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/TheWeeknd/music.html';">
+                    <img src="img/3-4.jpeg" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/TheWeeknd/music==page1.html';">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+         window.onload = () => {
+           let tl1 = gsap.timeline();
+            tl1.to(".cutton", 1.1,{
+                width: 0,
+                ease: "expo.inOut",
+                delay: 0.5
+            })
+
+        }
+
+        $(function(){
+            var scroll_pos = 0;
+            $(document).scroll(function(){
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 700){
+                    $(".text").css("opacity", "1")
+                }else{
+                    $(".text").css("opacity", "0")
+                }
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>works1</title>
+
+    <link rel="stylesheet" href="css/works==page4.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="cutton"></div>
+        <div id="slider"></div>
+
+        <div class="section">
+            <div class="section-one">
+                <div class="section-one-box">
+                    <h1>Marcello Barenghi Website</h1>
+                    <h2>"2021.11.29. ~ 2021.12.06."</h2>
+                </div>
+            </div>
+
+            <div class="section-two">
+                <div class="text">
+                    <div>
+                        <h1>Marcello Barenghi Website</h1>
+                        <h2>"2021.11.29. ~ 2021.12.06."</h2><Br>
+        
+                        <h3>이탈리아의 화가이자 유튜버인 마르첼로 바렌기의 홈페이지를 제작하였습니다.<br><br>
+                            주제와 하고 싶던 레이아웃 모두 반 고흐 미술관 사이트에서 영감을 받아 전체적인 디자인은
+                            위 사이트를 많이 참고하였습니다.<br><br>
+                            원페이지로 구성되어 있으며, 모바일 사용자에 맞게 반응형 홈페이지로 제작되었습니다.</h3>
+                    </div>       
+                </div>
+    
+                <div class="photo">
+                    <img src="img/4-1.jpeg" alt="" onclick="window.open('about:blank').location.href='https://fe2oz.github.io/Marcello-Barenghi/';">
+                    <img src="img/4-2.jpeg" alt="">
+                    <img src="img/4-3.jpeg" alt="">
+                    <img src="img/4-4.jpeg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+         window.onload = () => {
+           let tl1 = gsap.timeline();
+            tl1.to(".cutton", 1.1,{
+                width: 0,
+                ease: "expo.inOut",
+                delay: 0.5
+            })
+
+        }
+
+        $(function(){
+            var scroll_pos = 0;
+            $(document).scroll(function(){
+                scroll_pos = $(this).scrollTop();
+                if(scroll_pos > 700){
+                    $(".text").css("opacity", "1")
+                }else{
+                    $(".text").css("opacity", "0")
+                }
+            })
+        })
+    </script>
+</body>
+</html>
